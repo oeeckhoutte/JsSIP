@@ -281,7 +281,6 @@ exports.load = function (dst, src) {
     }
   }
 };
-
 },{"./Constants":2,"./Exceptions":6,"./Grammar":7,"./Socket":20,"./URI":25,"./Utils":26}],2:[function(require,module,exports){
 'use strict';
 
@@ -436,7 +435,6 @@ module.exports = {
   SESSION_EXPIRES: 90,
   MIN_SESSION_EXPIRES: 60
 };
-
 },{"../package.json":51}],3:[function(require,module,exports){
 'use strict';
 
@@ -725,7 +723,6 @@ module.exports = function () {
 
   return Dialog;
 }();
-
 },{"./Constants":2,"./Dialog/RequestSender":4,"./SIPMessage":19,"./Transactions":22,"./Utils":26,"debug":29}],4:[function(require,module,exports){
 'use strict';
 
@@ -847,7 +844,6 @@ module.exports = function () {
 
   return DialogRequestSender;
 }();
-
 },{"../Constants":2,"../RTCSession":12,"../RequestSender":18,"../Transactions":22}],5:[function(require,module,exports){
 'use strict';
 
@@ -1059,7 +1055,6 @@ module.exports = function () {
 
   return DigestAuthentication;
 }();
-
 },{"./Utils":26,"debug":29}],6:[function(require,module,exports){
 'use strict';
 
@@ -1146,7 +1141,6 @@ module.exports = {
   NotSupportedError: NotSupportedError,
   NotReadyError: NotReadyError
 };
-
 },{}],7:[function(require,module,exports){
 'use strict';
 
@@ -13506,7 +13500,6 @@ module.exports = function () {
   result.SyntaxError.prototype = Error.prototype;
   return result;
 }();
-
 },{"./NameAddrHeader":10,"./URI":25}],8:[function(require,module,exports){
 'use strict';
 
@@ -13547,7 +13540,6 @@ module.exports = {
     return pkg.version;
   }
 };
-
 },{"../package.json":51,"./Constants":2,"./Exceptions":6,"./Grammar":7,"./NameAddrHeader":10,"./UA":24,"./URI":25,"./Utils":26,"./WebSocketInterface":27,"debug":29,"webrtc-adapter":40}],9:[function(require,module,exports){
 'use strict';
 
@@ -13835,7 +13827,6 @@ module.exports = function (_EventEmitter) {
 
   return Message;
 }(EventEmitter);
-
 },{"./Constants":2,"./Exceptions":6,"./RequestSender":18,"./SIPMessage":19,"./Utils":26,"debug":29,"events":31}],10:[function(require,module,exports){
 'use strict';
 
@@ -13964,7 +13955,6 @@ module.exports = function () {
 
   return NameAddrHeader;
 }();
-
 },{"./Grammar":7,"./URI":25}],11:[function(require,module,exports){
 'use strict';
 
@@ -14281,7 +14271,6 @@ function parseHeader(message, data, headerStart, headerEnd) {
     return true;
   }
 }
-
 },{"./Grammar":7,"./SIPMessage":19,"debug":29}],12:[function(require,module,exports){
 'use strict';
 
@@ -17704,7 +17693,6 @@ module.exports = function (_EventEmitter) {
 
   return RTCSession;
 }(EventEmitter);
-
 },{"./Constants":2,"./Dialog":3,"./Exceptions":6,"./RTCSession/DTMF":13,"./RTCSession/Info":14,"./RTCSession/ReferNotifier":15,"./RTCSession/ReferSubscriber":16,"./RequestSender":18,"./SIPMessage":19,"./Timers":21,"./Transactions":22,"./Utils":26,"debug":29,"events":31,"sdp-transform":36}],13:[function(require,module,exports){
 'use strict';
 
@@ -17893,7 +17881,6 @@ module.exports = function (_EventEmitter) {
  * Expose C object.
  */
 module.exports.C = C;
-
 },{"../Constants":2,"../Exceptions":6,"../Utils":26,"debug":29,"events":31}],14:[function(require,module,exports){
 'use strict';
 
@@ -18018,7 +18005,6 @@ module.exports = function (_EventEmitter) {
 
   return Info;
 }(EventEmitter);
-
 },{"../Constants":2,"../Exceptions":6,"../Utils":26,"debug":29,"events":31}],15:[function(require,module,exports){
 'use strict';
 
@@ -18083,7 +18069,6 @@ module.exports = function () {
 
   return ReferNotifier;
 }();
-
 },{"../Constants":2,"debug":29}],16:[function(require,module,exports){
 'use strict';
 
@@ -18251,7 +18236,6 @@ module.exports = function (_EventEmitter) {
 
   return ReferSubscriber;
 }(EventEmitter);
-
 },{"../Constants":2,"../Grammar":7,"../Utils":26,"debug":29,"events":31}],17:[function(require,module,exports){
 'use strict';
 
@@ -18603,7 +18587,6 @@ module.exports = function () {
 
   return Registrator;
 }();
-
 },{"./Constants":2,"./RequestSender":18,"./SIPMessage":19,"./Utils":26,"debug":29}],18:[function(require,module,exports){
 'use strict';
 
@@ -18766,7 +18749,6 @@ module.exports = function () {
 
   return RequestSender;
 }();
-
 },{"./Constants":2,"./DigestAuthentication":5,"./Transactions":22,"debug":29}],19:[function(require,module,exports){
 'use strict';
 
@@ -19740,7 +19722,6 @@ module.exports = {
   IncomingRequest: IncomingRequest,
   IncomingResponse: IncomingResponse
 };
-
 },{"./Constants":2,"./Grammar":7,"./NameAddrHeader":10,"./Utils":26,"debug":29,"sdp-transform":36}],20:[function(require,module,exports){
 'use strict';
 
@@ -19815,7 +19796,6 @@ exports.isSocket = function (socket) {
 
   return true;
 };
-
 },{"./Grammar":7,"./Utils":26,"debug":29}],21:[function(require,module,exports){
 "use strict";
 
@@ -19838,7 +19818,6 @@ module.exports = {
   TIMER_M: 64 * T1,
   PROVISIONAL_RESPONSE_INTERVAL: 60000 // See RFC 3261 Section 13.3.1.1
 };
-
 },{}],22:[function(require,module,exports){
 'use strict';
 
@@ -20630,7 +20609,6 @@ module.exports = {
   InviteServerTransaction: InviteServerTransaction,
   checkTransaction: checkTransaction
 };
-
 },{"./Constants":2,"./SIPMessage":19,"./Timers":21,"debug":29,"events":31}],23:[function(require,module,exports){
 'use strict';
 
@@ -20969,7 +20947,6 @@ module.exports = function () {
 
   return Transport;
 }();
-
 },{"./Socket":20,"debug":29}],24:[function(require,module,exports){
 'use strict';
 
@@ -22009,7 +21986,6 @@ function onTransportData(data) {
     }
   }
 }
-
 },{"./Config":1,"./Constants":2,"./Exceptions":6,"./Grammar":7,"./Message":9,"./Parser":11,"./RTCSession":12,"./Registrator":17,"./SIPMessage":19,"./Transactions":22,"./Transport":23,"./URI":25,"./Utils":26,"./sanityCheck":28,"debug":29,"events":31}],25:[function(require,module,exports){
 'use strict';
 
@@ -22272,7 +22248,6 @@ module.exports = function () {
 
   return URI;
 }();
-
 },{"./Constants":2,"./Grammar":7,"./Utils":26}],26:[function(require,module,exports){
 'use strict';
 
@@ -22849,7 +22824,6 @@ exports.closeMediaStream = function (stream) {
 exports.cloneArray = function (array) {
   return array && array.slice() || [];
 };
-
 },{"./Constants":2,"./Grammar":7,"./URI":25}],27:[function(require,module,exports){
 'use strict';
 
@@ -23033,7 +23007,6 @@ module.exports = function () {
 
   return WebSocketInterface;
 }();
-
 },{"./Grammar":7,"debug":29}],28:[function(require,module,exports){
 'use strict';
 
@@ -23067,9 +23040,9 @@ module.exports = function (m, u, t) {
 
   try {
     for (var _iterator = all[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var _check2 = _step.value;
+      var check = _step.value;
 
-      if (_check2() === false) {
+      if (check() === false) {
         return false;
       }
     }
@@ -23095,9 +23068,9 @@ module.exports = function (m, u, t) {
 
     try {
       for (var _iterator2 = requests[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-        var check = _step2.value;
+        var _check = _step2.value;
 
-        if (check() === false) {
+        if (_check() === false) {
           return false;
         }
       }
@@ -23122,9 +23095,9 @@ module.exports = function (m, u, t) {
 
     try {
       for (var _iterator3 = responses[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-        var _check = _step3.value;
+        var _check2 = _step3.value;
 
-        if (_check() === false) {
+        if (_check2() === false) {
           return false;
         }
       }
@@ -23355,7 +23328,6 @@ function reply(status_code) {
 
   transport.send(response);
 }
-
 },{"./Constants":2,"./SIPMessage":19,"./Utils":26,"debug":29}],29:[function(require,module,exports){
 (function (process){
 /**
@@ -24453,9 +24425,7 @@ function writeMediaSection(transceiver, caps, type, stream, dtlsRole) {
 
   sdp += 'a=mid:' + transceiver.mid + '\r\n';
 
-  if (transceiver.direction) {
-    sdp += 'a=' + transceiver.direction + '\r\n';
-  } else if (transceiver.rtpSender && transceiver.rtpReceiver) {
+  if (transceiver.rtpSender && transceiver.rtpReceiver) {
     sdp += 'a=sendrecv\r\n';
   } else if (transceiver.rtpSender) {
     sdp += 'a=sendonly\r\n';
@@ -24529,7 +24499,6 @@ function filterIceServers(iceServers, edgeVersion) {
       server.urls = isString ? urls[0] : urls;
       return !!urls.length;
     }
-    return false;
   });
 }
 
@@ -24641,6 +24610,24 @@ function maybeAddCandidate(iceTransport, candidate) {
     iceTransport.addRemoteCandidate(candidate);
   }
   return !alreadyAdded;
+}
+
+
+// https://w3c.github.io/mediacapture-main/#mediastream
+// Helper function to add the track to the stream and
+// dispatch the event ourselves.
+function addTrackToStreamAndFireEvent(track, stream) {
+  stream.addTrack(track);
+  var e = new Event('addtrack'); // TODO: MediaStreamTrackEvent
+  e.track = track;
+  stream.dispatchEvent(e);
+}
+
+function removeTrackFromStreamAndFireEvent(track, stream) {
+  stream.removeTrack(track);
+  var e = new Event('removetrack'); // TODO: MediaStreamTrackEvent
+  e.track = track;
+  stream.dispatchEvent(e);
 }
 
 module.exports = function(window, edgeVersion) {
@@ -24770,6 +24757,7 @@ module.exports = function(window, edgeVersion) {
       sendEncodingParameters: null,
       recvEncodingParameters: null,
       stream: null,
+      associatedRemoteMediaStreams: [],
       wantReceive: true
     };
     if (this.usingBundle && hasBundleTransport) {
@@ -24832,12 +24820,50 @@ module.exports = function(window, edgeVersion) {
     }
   };
 
-  RTCPeerConnection.prototype.removeStream = function(stream) {
-    var idx = this.localStreams.indexOf(stream);
-    if (idx > -1) {
-      this.localStreams.splice(idx, 1);
-      this._maybeFireNegotiationNeeded();
+  RTCPeerConnection.prototype.removeTrack = function(sender) {
+    if (!(sender instanceof window.RTCRtpSender)) {
+      throw new TypeError('Argument 1 of RTCPeerConnection.removeTrack ' +
+          'does not implement interface RTCRtpSender.');
     }
+
+    var transceiver = this.transceivers.find(function(t) {
+      return t.rtpSender === sender;
+    });
+
+    if (!transceiver) {
+      var err = new Error('Sender was not created by this connection.');
+      err.name = 'InvalidAccessError';
+      throw err;
+    }
+    var stream = transceiver.stream;
+
+    transceiver.rtpSender.stop();
+    transceiver.rtpSender = null;
+    transceiver.track = null;
+    transceiver.stream = null;
+
+    // remove the stream from the set of local streams
+    var localStreams = this.transceivers.map(function(t) {
+      return t.stream;
+    });
+    if (localStreams.indexOf(stream) === -1 &&
+        this.localStreams.indexOf(stream) > -1) {
+      this.localStreams.splice(this.localStreams.indexOf(stream), 1);
+    }
+
+    this._maybeFireNegotiationNeeded();
+  };
+
+  RTCPeerConnection.prototype.removeStream = function(stream) {
+    var self = this;
+    stream.getTracks().forEach(function(track) {
+      var sender = self.getSenders().find(function(s) {
+        return s.track === track;
+      });
+      if (sender) {
+        self.removeTrack(sender);
+      }
+    });
   };
 
   RTCPeerConnection.prototype.getSenders = function() {
@@ -25323,6 +25349,7 @@ module.exports = function(window, edgeVersion) {
           ssrc: (2 * sdpMLineIndex + 2) * 1001
         }];
 
+        // TODO: rewrite to use http://w3c.github.io/webrtc-pc/#set-associated-remote-streams
         var isNewTrack = false;
         if (direction === 'sendrecv' || direction === 'sendonly') {
           isNewTrack = !transceiver.rtpReceiver;
@@ -25354,9 +25381,20 @@ module.exports = function(window, edgeVersion) {
               }
               stream = streams.default;
             }
-            stream.addTrack(track);
+            addTrackToStreamAndFireEvent(track, stream);
             receiverList.push([track, rtpReceiver, stream]);
+            transceiver.associatedRemoteMediaStreams.push(stream);
           }
+        } else if (transceiver.rtpReceiver && transceiver.rtpReceiver.track) {
+          transceiver.associatedRemoteMediaStreams.forEach(function(s) {
+            var nativeTrack = s.getTracks().find(function(t) {
+              return t.id === transceiver.rtpReceiver.track.id;
+            });
+            if (nativeTrack) {
+              removeTrackFromStreamAndFireEvent(nativeTrack, s);
+            }
+          });
+          transceiver.associatedRemoteMediaStreams = [];
         }
 
         transceiver.localCapabilities = localCapabilities;
@@ -25411,6 +25449,7 @@ module.exports = function(window, edgeVersion) {
             direction === 'sendrecv' || direction === 'recvonly',
             direction === 'sendrecv' || direction === 'sendonly');
 
+        // TODO: rewrite to use http://w3c.github.io/webrtc-pc/#set-associated-remote-streams
         if (rtpReceiver &&
             (direction === 'sendrecv' || direction === 'sendonly')) {
           track = rtpReceiver.track;
@@ -25418,13 +25457,13 @@ module.exports = function(window, edgeVersion) {
             if (!streams[remoteMsid.stream]) {
               streams[remoteMsid.stream] = new window.MediaStream();
             }
-            streams[remoteMsid.stream].addTrack(track);
+            addTrackToStreamAndFireEvent(track, streams[remoteMsid.stream]);
             receiverList.push([track, rtpReceiver, streams[remoteMsid.stream]]);
           } else {
             if (!streams.default) {
               streams.default = new window.MediaStream();
             }
-            streams.default.addTrack(track);
+            addTrackToStreamAndFireEvent(track, streams.default);
             receiverList.push([track, rtpReceiver, streams.default]);
           }
         } else {
@@ -27343,6 +27382,7 @@ module.exports = function(dependencies, opts) {
       firefoxShim.shimSourceObject(window);
       firefoxShim.shimPeerConnection(window);
       firefoxShim.shimOnTrack(window);
+      firefoxShim.shimRemoveStream(window);
 
       commonShim.shimRTCIceCandidate(window);
       break;
@@ -27624,7 +27664,7 @@ var chromeShim = {
     var browserDetails = utils.detectBrowser(window);
     // shim addTrack and removeTrack.
     if (window.RTCPeerConnection.prototype.addTrack &&
-        browserDetails.version >= 63) {
+        browserDetails.version >= 64) {
       return;
     }
 
@@ -28135,6 +28175,9 @@ module.exports = function(window) {
   };
 
   var shimConstraints_ = function(constraints, func) {
+    if (browserDetails.version >= 61) {
+      return func(constraints);
+    }
     constraints = JSON.parse(JSON.stringify(constraints));
     if (constraints && typeof constraints.audio === 'object') {
       var remap = function(obj, a, b) {
@@ -28789,6 +28832,21 @@ var firefoxShim = {
         })
         .then(onSucc, onErr);
     };
+  },
+
+  shimRemoveStream: function(window) {
+    if ('removeStream' in window.RTCPeerConnection.prototype) {
+      return;
+    }
+    window.RTCPeerConnection.prototype.removeStream = function(stream) {
+      var pc = this;
+      utils.deprecated('removeStream', 'removeTrack');
+      this.getSenders().forEach(function(sender) {
+        if (sender.track && stream.getTracks().indexOf(sender.track) !== -1) {
+          pc.removeTrack(sender);
+        }
+      });
+    };
   }
 };
 
@@ -28797,6 +28855,7 @@ module.exports = {
   shimOnTrack: firefoxShim.shimOnTrack,
   shimSourceObject: firefoxShim.shimSourceObject,
   shimPeerConnection: firefoxShim.shimPeerConnection,
+  shimRemoveStream: firefoxShim.shimRemoveStream,
   shimGetUserMedia: require('./getusermedia')
 };
 
@@ -29481,7 +29540,7 @@ module.exports={
     "Iñaki Baz Castillo <ibc@aliax.net> (https://github.com/ibc)",
     "Saúl Ibarra Corretgé <saghul@gmail.com> (https://github.com/saghul)"
   ],
-  "main": "lib/JsSIP.js",
+  "main": "lib-es5/JsSIP.js",
   "keywords": [
     "sip",
     "websocket",
@@ -29499,27 +29558,17 @@ module.exports={
     "url": "https://github.com/versatica/JsSIP/issues"
   },
   "dependencies": {
-    "debug": "^3.0.1",
+    "debug": "^3.1.0",
     "sdp-transform": "^2.3.0",
-    "webrtc-adapter": "^5.0.0"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015"
-          ]
-        }
-      ]
-    ]
+    "webrtc-adapter": "^6.0.2"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "babelify": "7.3.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browserify": "^14.3.0",
+    "eslint": "^4.4.1",
     "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
+    "gulp-babel": "^7.0.0",
     "gulp-eslint": "^4.0.0",
     "gulp-expect-file": "0.0.7",
     "gulp-header": "1.8.9",
@@ -29528,7 +29577,6 @@ module.exports={
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
-    "eslint": "^4.4.1",
     "pegjs": "0.7.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
