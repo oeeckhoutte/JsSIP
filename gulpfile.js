@@ -147,4 +147,8 @@ gulp.task('devel', gulp.series('grammar'));
 
 gulp.task('dist', gulp.series('lint', 'babel', 'test', 'browserify', 'uglify'));
 
+gulp.task('install', gulp.series('babel', 'browserify', 'uglify'));
+
+gulp.task('prepublish', gulp.series('install'));
+
 gulp.task('default', gulp.series('dist'));
